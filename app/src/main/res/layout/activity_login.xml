@@ -16,7 +16,6 @@
         android:id="@+id/email_field"
 
         style="@style/block_bt_white"
-        android:layout_marginTop="256dp"
 
         android:background="@drawable/edittext"
         android:hint="@string/prompt_email"
@@ -24,6 +23,7 @@
 
 
         android:selectAllOnFocus="true"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -32,17 +32,19 @@
         android:id="@+id/pwd_field"
         style="@style/block_bt_white"
 
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/edittext"
         android:hint="@string/prompt_password"
         android:imeActionLabel="@string/action_sign_in_short"
         android:imeOptions="actionDone"
         android:inputType="textPassword"
-        android:selectAllOnFocus="true"
 
+        android:selectAllOnFocus="true"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_field" />
+        app:layout_constraintTop_toBottomOf="@+id/email_field"
+        app:layout_constraintVertical_bias="0.015" />
 
     <Button
         android:id="@+id/login"
@@ -83,21 +85,24 @@
 
         app:layout_constraintBottom_toTopOf="@+id/email_field"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948" />
 
     <TextView
         android:id="@+id/tx_forgot_pwd"
 
         style="@style/text_white"
 
-        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Забыли пароль?"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pwd_field" />
+        app:layout_constraintTop_toBottomOf="@+id/pwd_field"
+        app:layout_constraintVertical_bias="0.525" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
