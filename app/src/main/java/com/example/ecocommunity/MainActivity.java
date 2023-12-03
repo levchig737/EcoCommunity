@@ -1,16 +1,14 @@
 package com.example.ecocommunity;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 import com.example.ecocommunity.databinding.ActivityMainBinding;
+import com.example.ecocommunity.ui.login.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,4 +32,8 @@ public class MainActivity extends AppCompatActivity {
 //        NavigationUI.setupWithNavController(binding.navView, navController);
     }
 
+    public void startLoginActivity(View v){
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
 }

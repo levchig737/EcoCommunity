@@ -21,18 +21,14 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="339dp"
-        android:layout_height="148dp"
+
         android:text="Вас приветствует EcoCommumity!"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.409" />
+        app:layout_constraintVertical_bias="0.409"
+        style="@style/text_white" />
 
     <Button
         android:id="@+id/bt_login"
@@ -40,16 +36,19 @@
 
         android:layout_marginTop="8dp"
 
-        android:text="Войти"
+        android:onClick="startLoginActivity"
+        android:text="@string/login"
         app:cornerRadius="100dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="2dp"
 
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt_create_account"
         app:layout_constraintVertical_bias="0.036"
-        app:strokeColor="#FFFFFF"
-        app:strokeWidth="2dp" />
+         />
 
     <Button
         android:id="@+id/bt_create_account"
