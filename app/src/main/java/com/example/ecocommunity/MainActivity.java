@@ -9,6 +9,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 
 import com.example.ecocommunity.databinding.ActivityMainBinding;
 import com.example.ecocommunity.ui.login.LoginActivity;
+import com.example.ecocommunity.ui.login.RegisterActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,6 +35,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void startLoginActivity(View v){
         Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+
+    public void startRegisterActivity(View v){
+        Intent intent = new Intent(this, RegisterActivity.class);
         startActivity(intent);
     }
 }

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ui.login.RegisterActivity">
+
+    <TextView
+        android:id="@+id/tx_login"
+        style="@style/text_white"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+
+        android:text="@string/register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tx_firstname"
+
+        style="@style/block_bt_white"
+
+        android:layout_marginTop="64dp"
+        android:background="@drawable/edittext"
+        android:hint="Фамилия"
+
+
+        android:inputType="textPersonName"
+
+
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx_login" />
+
+    <EditText
+        android:id="@+id/tx_lastname"
+
+        style="@style/block_bt_white"
+
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittext"
+        android:hint="Имя"
+
+
+        android:inputType="textPersonName"
+
+
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx_firstname" />
+
+    <EditText
+        android:id="@+id/tx_patronymic"
+
+        style="@style/block_bt_white"
+
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittext"
+        android:hint="Отчество"
+
+
+        android:inputType="textPersonName"
+
+
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx_lastname" />
+
+    <EditText
+        android:id="@+id/tx_age"
+
+        style="@style/block_bt_white"
+
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittext"
+        android:hint="Возраст"
+
+
+        android:inputType="number"
+
+
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx_patronymic" />
+
+
+    <EditText
+        android:id="@+id/email_field"
+
+        style="@style/block_bt_white"
+
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittext"
+        android:hint="@string/prompt_email"
+
+
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx_age" />
+
+    <Button
+        android:id="@+id/bt_send"
+        style="@style/block_bt_green"
+
+        android:layout_marginTop="96dp"
+        android:text="Отправить"
+
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_field"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

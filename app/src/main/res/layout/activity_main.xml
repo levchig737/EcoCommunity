@@ -22,13 +22,13 @@
     <TextView
         android:id="@+id/textView2"
 
+        style="@style/text_white"
         android:text="Вас приветствует EcoCommumity!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.409"
-        style="@style/text_white" />
+        app:layout_constraintVertical_bias="0.409" />
 
     <Button
         android:id="@+id/bt_login"
@@ -39,16 +39,15 @@
         android:onClick="startLoginActivity"
         android:text="@string/login"
         app:cornerRadius="100dp"
-        app:strokeColor="#FFFFFF"
-        app:strokeWidth="2dp"
-
         app:layout_constraintBottom_toBottomOf="parent"
-
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toBottomOf="@+id/bt_create_account"
         app:layout_constraintVertical_bias="0.036"
-         />
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/bt_create_account"
@@ -56,14 +55,15 @@
 
         android:layout_marginTop="68dp"
 
+        android:onClick="startRegisterActivity"
         android:text="Создать аккаунт"
         app:cornerRadius="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.007"
 
+        app:layout_constraintVertical_bias="0.007"
         app:rippleColor="#0D8547"
         app:strokeColor="#0D8547"
         app:strokeWidth="2dp" />
